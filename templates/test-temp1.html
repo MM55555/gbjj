@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            테스트페이지1
+        </title>
+    </head>
+    <body>
+        <h3>This is {{test_list[2]}}.</h3>
+        <h3>test list is {{test_list}}</h3>
+        <ul>
+            {% for item in test_list %}
+            <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

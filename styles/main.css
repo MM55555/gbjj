@@ -1,0 +1,135 @@
+:root{
+    --theme-light: rgb(238, 227, 221);
+    --theme-alwhite : #FFFFFF;
+    --theme-bright: #F26968;
+    --theme-normal: #b3a5a6;
+    --theme-shadow: #3D313F;
+    --theme-alblack: #000000;
+    --theme-caution: rgb(184, 203, 214);
+}
+
+html{
+    min-height: 100vh;
+    height: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: var(--theme-alwhite);
+}
+
+div#code-window{
+    height: 75vh;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+textarea#editor {
+    display: block;
+    resize: none;
+    width: calc(100vw - 50px);
+    height: calc(50vh);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.small-btn {
+    border: 2px;
+    border-style: solid;
+    border-color: var(--theme-shadow);
+    background-color: var(--theme-light);
+    font-size: 100%;
+}
+
+div.topmenu{
+    display: table;
+    height: 40px;
+    width: 100%;
+    border: 0px;
+    border-style: solid;
+    border-bottom: 2px solid var(--theme-shadow);
+    background: var(--theme-normal);
+    margin-bottom: 16px;
+}
+
+div#explorer-window{
+    width: 100%;
+    height:calc(100vh - 80px);
+    background: var(--theme-light);
+}
+
+li.file-list{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--theme-shadow);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: var(--theme-normal);
+}
+
+button#new-edit{
+    height: 100%;
+    width: 100px;
+    float: right;
+    border: 0px;
+    background: var(--theme-caution);
+
+    font-size: 18px;
+
+    animation-name: btn-srk;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+
+button#new-edit:hover{
+    animation-name: btn-ext;
+    animation-duration: 0.1s;
+    animation-fill-mode: both;
+}
+
+button#new-edit:active{
+    animation-fill-mode: backwards;
+    background: var(--theme-bright);
+}
+
+p#work-directory{
+    margin: 0px 0px 0px 16px;
+    font-size: 20px;
+}
+
+div#fffuuu{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+p.block-p{
+    width: 200px;
+    background-color: var(--theme-caution);
+    border: 2px;
+    border-style: solid;
+    border-color: var(--theme-caution);
+}
+
+@keyframes btn-ext{
+    0%{ background: linear-gradient(to right, var(--theme-bright) 0.5%, var(--theme-caution) 0.5%);}
+    25%{ background: linear-gradient(to right, var(--theme-bright) 1%, var(--theme-caution) 1%);}
+    50%{ background: linear-gradient(to right, var(--theme-bright) 2%, var(--theme-caution) 2%);}
+    75%{ background: linear-gradient(to right, var(--theme-bright) 4%, var(--theme-caution) 4%);}
+    100%{ background: linear-gradient(to right, var(--theme-bright) 7%, var(--theme-caution) 7%);}
+}
+
+@keyframes btn-srk{
+    0%{ background: linear-gradient(to right, var(--theme-bright) 4%, var(--theme-caution) 4%);}
+    25%{ background: linear-gradient(to right, var(--theme-bright) 2%, var(--theme-caution) 2%);}
+    50%{ background: linear-gradient(to right, var(--theme-bright) 1%, var(--theme-caution) 1%);}
+    75%{ background: linear-gradient(to right, var(--theme-bright) 0.5%, var(--theme-caution) 0.5%);}
+    100%{ background: linear-gradient(to right, var(--theme-bright) 0%, var(--theme-caution) 0%);}
+}

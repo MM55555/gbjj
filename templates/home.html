@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>예제 홈페이지</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="/styles/main.css" />
+    </head>
+    <body>
+        <div id="home-topmenu" class="topmenu">
+            <div id="fffuuu">
+                <p id="work-directory">{{username}}</p>
+            </div>
+            <button id="new-edit">&lt; 에디터</button>
+        </div>
+        <div id="explorer-window" class="principle-content">
+            <p>{{ptype}}</p>
+            <p id="child-path"></p>
+        </div>
+        <script>
+            document.getElementById("new-edit").onclick = function(){
+                location.href = "./editor"
+            }
+        </script>
+        <script src="/scripts/homie.js"></script>
+    </body>
+</html>

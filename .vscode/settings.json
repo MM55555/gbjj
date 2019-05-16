@@ -1,0 +1,6 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.pythonPath": "/Users/jongco/gongbujumjum/venv/bin/python3",
+    "python.linting.enabled": true,
+    "python.linting.mypyEnabled": false
+}
